@@ -1,7 +1,21 @@
+//color variables
 /* Primary */
+$Light-red-cta: hsl(356, 100%, 66%);
+$Very-light-red: hsl(355, 100%, 74%);
+$vdk-blue: hsl(208deg, 49%, 24%);
 /*Neutral */
+$white: hsl(0, 0%, 100%);
+$Grayish-blue: hsl(240, 2%, 79%);
+$vdk-grayish-blue: hsl(207, 13%, 34%);
+$vdk-black-blue: hsl(240, 10%, 16%);
 /* Gradient */
+$Vl-red: hsl(13, 100%, 72%);
+$Light-red: hsl(353, 79%, 54%);
 /* Background-gradient - body: */
+$Vdk-gray-blue: hsl(237, 17%, 21%);
+$Vdk-desaturated-blue: hsl(237, 23%, 32%);
+
+// Universal Styling
 * {
   padding: 0;
   margin: 0;
@@ -16,9 +30,9 @@ img {
 .btn {
   padding: 1em 2.5em;
   background-color: transparent;
-  color: hsl(0deg, 0%, 100%);
+  color: $white;
   border-radius: 2rem;
-  border: 1px solid hsl(0deg, 0%, 100%);
+  border: 1px solid $white;
   font-weight: 600;
   cursor: pointer;
 }
@@ -30,40 +44,39 @@ ul {
 a {
   text-decoration: none;
 }
-
 .container {
   max-width: 60rem;
   margin: 0 auto;
 }
-
+// main styling
 body {
   min-height: 100vh;
-  background-image: linear-gradient(hsl(237deg, 17%, 21%), hsl(237deg, 23%, 32%));
+  background-image: linear-gradient($Vdk-gray-blue, $Vdk-desaturated-blue);
 }
 
 header {
   padding-top: 3rem;
-}
-header nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-header .logo {
-  display: flex;
-  align-items: center;
-}
-header .nav-links {
-  display: flex;
-}
-header .login-btn {
-  border: none;
-}
-header .signup-btn {
-  color: hsl(356deg, 100%, 66%);
-  background-color: hsl(0deg, 0%, 100%);
-}
 
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  .nav-links {
+    display: flex;
+  }
+  .login-btn {
+    border: none;
+  }
+  .signup-btn {
+    color: $Light-red-cta;
+    background-color: $white;
+  }
+}
 .hero {
   position: relative;
   background-image: url(/images/bg-pattern-intro-desktop.svg);
@@ -75,13 +88,12 @@ header .signup-btn {
   height: 90vh;
   min-height: 90vh;
 }
-
 .hero::before {
   position: absolute;
   content: "";
   height: 100%;
   width: 100%;
-  background-image: linear-gradient(90deg, hsl(13deg, 100%, 72%), hsl(353deg, 79%, 54%));
+  background-image: linear-gradient(90deg, $Vl-red, $Light-red);
   border-bottom-left-radius: 7rem;
   z-index: -1;
 }
@@ -95,16 +107,16 @@ header .signup-btn {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: hsl(0deg, 0%, 100%);
-}
-.hero .hero-text h1 {
-  font-size: 3rem;
-}
-.hero .hero-text .login-btn {
-  color: hsl(356deg, 100%, 66%);
-  background-color: hsl(0deg, 0%, 100%);
-}
+  color: $white;
 
+  h1 {
+    font-size: 3rem;
+  }
+  .login-btn {
+    color: $Light-red-cta;
+    background-color: $white;
+  }
+}
 .section-2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
