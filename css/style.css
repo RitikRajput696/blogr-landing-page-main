@@ -32,13 +32,17 @@ a {
 }
 
 .container {
-  max-width: 60rem;
+  max-width: 70rem;
   margin: 0 auto;
+}
+
+p {
+  font-family: "Ubuntu", sans-serif;
 }
 
 body {
   min-height: 100vh;
-  background-image: linear-gradient(hsl(237deg, 17%, 21%), hsl(237deg, 23%, 32%));
+  font-family: "Overpass", sans-serif;
 }
 
 header {
@@ -87,18 +91,16 @@ header .signup-btn {
 }
 
 .hero .hero-text {
-  position: absolute;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 2rem;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  margin-top: 6rem;
   color: hsl(0deg, 0%, 100%);
+  font-family: "Overpass", sans-serif;
 }
 .hero .hero-text h1 {
-  font-size: 3rem;
+  font-size: 4rem;
 }
 .hero .hero-text .login-btn {
   color: hsl(356deg, 100%, 66%);
@@ -106,6 +108,18 @@ header .signup-btn {
 }
 
 .section-2 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  padding-top: 5rem;
+}
+.section-2 .section-2-heading h1 {
+  text-align: center;
+  font-size: 3rem;
+}
+.section-2 .feature {
+  margin-top: 5rem;
+}
+.section-2 .feature h1 {
+  font-size: 2rem;
+}
+.section-2 .feature p {
+  max-width: 30rem;
 }

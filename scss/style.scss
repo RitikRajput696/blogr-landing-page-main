@@ -15,6 +15,11 @@ $Light-red: hsl(353, 79%, 54%);
 $Vdk-gray-blue: hsl(237, 17%, 21%);
 $Vdk-desaturated-blue: hsl(237, 23%, 32%);
 
+//font variables
+$overpass: "Overpass", sans-serif;
+
+$ubuntu: "Ubuntu", sans-serif;
+
 // Universal Styling
 * {
   padding: 0;
@@ -45,13 +50,17 @@ a {
   text-decoration: none;
 }
 .container {
-  max-width: 60rem;
+  max-width: 70rem;
   margin: 0 auto;
+}
+p {
+  font-family: $ubuntu;
 }
 // main styling
 body {
   min-height: 100vh;
-  background-image: linear-gradient($Vdk-gray-blue, $Vdk-desaturated-blue);
+  // background-image: linear-gradient($Vdk-gray-blue, $Vdk-desaturated-blue);
+  font-family: $overpass;
 }
 
 header {
@@ -99,18 +108,16 @@ header {
 }
 
 .hero .hero-text {
-  position: absolute;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 2rem;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  margin-top: 6rem;
   color: $white;
+  font-family: $overpass;
 
   h1 {
-    font-size: 3rem;
+    font-size: 4rem;
   }
   .login-btn {
     color: $Light-red-cta;
@@ -118,6 +125,21 @@ header {
   }
 }
 .section-2 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  padding-top: 5rem;
+
+  .section-2-heading {
+    h1 {
+      text-align: center;
+      font-size: 3rem;
+    }
+  }
+  .feature {
+    margin-top: 5rem;
+    h1 {
+      font-size: 2rem;
+    }
+    p {
+      max-width: 30rem;
+    }
+  }
 }
