@@ -222,3 +222,9 @@ header {
     }
   }
 }
+footer {
+  background-color: $vdk-black-blue;
+  color: $white;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
