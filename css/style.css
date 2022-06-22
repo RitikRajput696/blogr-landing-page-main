@@ -108,12 +108,12 @@ header .signup-btn {
 }
 
 .section-2 {
+  height: 60rem;
   padding-top: 5rem;
-  padding-bottom: 15 rem;
   background-image: url(/images/illustration-editor-desktop.svg);
   background-repeat: no-repeat;
   background-position-x: 144%;
-  background-position-y: 100%;
+  background-position-y: 50%;
 }
 .section-2 .section-2-heading h1 {
   text-align: center;
@@ -201,4 +201,23 @@ footer {
   color: hsl(0deg, 0%, 100%);
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  border-top-right-radius: 5rem;
+}
+footer .footer-logo {
+  padding-right: 2rem;
+}
+footer .footer-logo .img-wrapper {
+  width: 7rem;
+  margin: 0 auto;
+}
+footer a {
+  color: hsl(0deg, 0%, 100%);
+}
+footer .footer-links h3 {
+  margin-bottom: 2.5rem;
+}
+footer .footer-links li {
+  margin-bottom: 1rem;
 }
