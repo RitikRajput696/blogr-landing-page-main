@@ -76,6 +76,7 @@ header .nav-links > li {
 header .login-btn {
   border: none;
   transition: 200ms linear;
+  opacity: 0.8;
 }
 header .signup-btn {
   color: hsl(356deg, 100%, 66%);

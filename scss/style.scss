@@ -95,6 +95,7 @@ header {
   .login-btn {
     border: none;
     transition: 200ms linear;
+    opacity: 0.8;
   }
   .signup-btn {
     color: $light-red-cta;
