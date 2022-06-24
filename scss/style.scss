@@ -90,6 +90,7 @@ header {
     color: $white;
     padding: 1rem 1.5rem;
     cursor: pointer;
+    opacity: 0.95;
   }
   .login-btn {
     border: none;
@@ -111,11 +112,10 @@ header {
   position: absolute;
   top: 3rem;
   background-color: $white;
-  color: black;
+  color: $vdk-blue;
   border-radius: 4px;
   padding: 1rem 1.5rem;
   line-height: 1.5;
-  // margin-top: ;
   display: none;
 }
 .dropdown-item > li:hover {
@@ -161,6 +161,10 @@ header {
   h1 {
     font-size: 4rem;
   }
+  .nav-buttons {
+    display: flex;
+    gap: 2rem;
+  }
   .login-btn {
     color: $light-red-cta;
     background-color: $white;
@@ -182,17 +186,20 @@ header {
     h1 {
       text-align: center;
       font-size: 3rem;
+      color: $vdk-blue;
     }
   }
   .feature {
     margin-top: 5rem;
     h1 {
       font-size: 2rem;
+      color: $vdk-blue;
     }
     p {
       max-width: 30rem;
       margin-top: 2rem;
       line-height: 1.7;
+      color: $vdk-grayish-blue;
     }
   }
 }
@@ -237,6 +244,7 @@ header {
     }
     p {
       line-height: 1.7;
+      color: $grayish-blue;
     }
   }
 }
@@ -259,11 +267,13 @@ header {
       margin-top: 5rem;
       h1 {
         font-size: 2rem;
+        color: $vdk-blue;
       }
       p {
         max-width: 30rem;
         margin-top: 2rem;
         line-height: 1.7;
+        color: $vdk-grayish-blue;
       }
     }
   }
@@ -287,7 +297,7 @@ footer {
     // background-repeat: no-repeat;
   }
   a {
-    color: $white;
+    color: $grayish-blue;
   }
   .footer-links {
     h3 {
