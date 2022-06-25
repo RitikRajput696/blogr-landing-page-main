@@ -230,7 +230,7 @@ header {
   .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    height: 35rem;
+    min-height: 35rem;
   }
 
   .section-3-text {
@@ -329,6 +329,26 @@ footer {
       background-position: center;
       background-image: url(/images/illustration-laptop-mobile.svg);
       background-size: contain;
+    }
+  }
+}
+@media only screen and (max-width: 900px) {
+  .section-3 {
+    &::after {
+      background-position: center;
+    }
+    padding-bottom: 4rem;
+    .container {
+      grid-template-columns: repeat(1, 1fr);
+      text-align: center;
+      P {
+        max-width: 30rem;
+        margin: 0 auto;
+      }
+      .phone-img {
+        max-width: 26rem;
+        margin: 0 auto;
+      }
     }
   }
 }
