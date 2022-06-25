@@ -252,7 +252,7 @@ header {
 .section-4 {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  height: 55rem;
+  min-height: 55rem;
 
   .section-4-img {
     background-image: url(/images/illustration-laptop-desktop.svg);
@@ -300,12 +300,49 @@ footer {
   a {
     color: $grayish-blue;
   }
+  a:hover {
+    text-decoration: underline;
+  }
   .footer-links {
     h3 {
       margin-bottom: 2.5rem;
     }
     li {
       margin-bottom: 1rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .section-4 {
+    grid-template-columns: repeat(1, 1fr);
+    text-align: center;
+    .section-4-text {
+      P {
+        margin: 0 auto;
+      }
+    }
+    .section-4-img {
+      background-position: center;
+      background-image: url(/images/illustration-laptop-mobile.svg);
+      background-size: cover;
+    }
+  }
+}
+@media only screen and (max-width: 700px) {
+  footer {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 3rem;
+  }
+  .footer-links {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 450px) {
+  footer {
+    grid-template-columns: repeat(1, 1fr);
+    .footer-logo {
+      padding-right: 0rem;
     }
   }
 }
