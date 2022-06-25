@@ -290,13 +290,18 @@ footer .footer-links li {
     grid-template-columns: repeat(1, 1fr);
     text-align: center;
   }
+  .section-4 .section-4-text {
+    padding-bottom: 4rem;
+  }
   .section-4 .section-4-text P {
     margin: 0 auto;
   }
   .section-4 .section-4-img {
+    height: 35rem;
+    width: auto;
     background-position: center;
     background-image: url(/images/illustration-laptop-mobile.svg);
-    background-size: cover;
+    background-size: contain;
   }
 }
 @media only screen and (max-width: 700px) {
