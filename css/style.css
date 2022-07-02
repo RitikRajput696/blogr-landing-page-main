@@ -165,7 +165,6 @@ header .signup-btn:hover {
   height: 60rem;
   padding-top: 5rem;
   background-image: url(../images/illustration-editor-desktop.svg);
-  background-size: auto;
   background-repeat: no-repeat;
   background-position-x: 144%;
   background-position-y: 50%;
