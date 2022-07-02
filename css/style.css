@@ -116,7 +116,7 @@ header .signup-btn:hover {
 
 .hero {
   position: relative;
-  background-image: url(/images/bg-pattern-intro-desktop.svg);
+  background-image: url(../images/bg-pattern-intro-desktop.svg);
   background-size: 200% 482%;
   background-repeat: no-repeat;
   background-position-x: 31%;
